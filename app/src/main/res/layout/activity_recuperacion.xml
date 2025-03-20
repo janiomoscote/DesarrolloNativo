@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/negro">
+
+    <ImageView
+        android:id="@+id/imvw_logo_recuperacion"
+        android:layout_width="199dp"
+        android:layout_height="195dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txv_mensaje_recuperacion"
+        android:layout_width="380dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/noto_serif_toto_medium"
+        android:text="@string/recuperacion"
+        android:textAlignment="center"
+        android:textColor="@color/blanco"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imvw_logo_recuperacion"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <TextView
+        android:id="@+id/txv_correo_recuperacion"
+        android:layout_width="210dp"
+        android:layout_height="31dp"
+        android:fontFamily="@font/noto_serif_toto_medium"
+        android:text="@string/correo_electronico"
+        android:textAlignment="center"
+        android:textColor="@color/blanco"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="405dp" />
+
+    <EditText
+        android:id="@+id/edtx_correo_recuperacion"
+        style="@style/EditTextRounded"
+        android:layout_width="283dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="40dp"
+        android:ems="10"
+        android:fontFamily="@font/noto_serif_toto_medium"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="443dp" />
+
+    <Button
+        android:id="@+id/btn_enviar_recuperacion"
+        android:layout_width="276dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/blanco"
+        android:fontFamily="@font/noto_serif_toto_medium"
+        android:text="@string/enviar"
+        android:textColor="@color/naranja"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.348"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/naranja"
+        app:strokeWidth="3dp"
+
+        tools:layout_editor_absoluteY="506dp" />
+
+    <TextView
+        android:id="@+id/tvw_nombre_app_recup"
+        android:layout_width="211dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="236dp"
+        android:fontFamily="@font/noto_serif_toto_medium"
+        android:text="@string/app_name"
+        android:textColor="@color/blanco"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

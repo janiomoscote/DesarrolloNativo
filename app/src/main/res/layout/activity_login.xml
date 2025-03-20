@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/negro">
+
+    <TextView
+        android:id="@+id/txvw_nombre_app_login"
+        android:layout_width="213dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/noto_serif_toto_medium"
+        android:text="@string/app_name"
+        android:textColor="@color/blanco"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_google"
+        android:layout_width="323dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="104dp"
+        android:backgroundTint="@color/blanco"
+        android:fontFamily="@font/noto_serif_toto_medium"
+        android:text="@string/with_google"
+
+        android:textColor="@color/negro"
+        android:textSize="20sp"
+
+        app:icon="@drawable/google"
+        app:iconSize="30dp"
+        app:iconTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.715"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/naranja"
+        app:strokeWidth="3dp" />
+
+    <Button
+        android:id="@+id/btn_recuperar"
+        android:layout_width="315dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="500dp"
+        android:backgroundTint="@color/blanco"
+        android:fontFamily="@font/noto_serif_toto_medium"
+        android:text="@string/recupera"
+        android:textColor="@color/negro"
+        android:textSize="20sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.739"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/naranja"
+        app:strokeWidth="3dp" />
+
+    <ImageView
+        android:id="@+id/imvw_logo_login"
+        android:layout_width="131dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txv_abordo"
+        android:layout_width="314dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/noto_serif_toto_medium"
+        android:text="@string/abordo"
+        android:textAlignment="center"
+        android:textColor="@color/blanco"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="191dp" />
+
+    <ImageView
+        android:id="@+id/imvw_contrasenya"
+        android:layout_width="55dp"
+        android:layout_height="56dp"
+        app:layout_constraintEnd_toStartOf="@+id/etx_contrasenya"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/llave"
+        tools:layout_editor_absoluteY="356dp" />
+
+    <ImageView
+        android:id="@+id/imvw_perfil"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/usuario"
+        tools:layout_editor_absoluteY="287dp" />
+
+    <EditText
+        android:id="@+id/etx_nombre_usuario"
+        style="@style/EditTextRounded"
+        android:layout_width="300dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/negro"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@+id/imvw_perfil"
+        tools:layout_editor_absoluteY="298dp" />
+
+    <EditText
+        android:id="@+id/etx_contrasenya"
+        style="@style/EditTextRounded"
+        android:layout_width="296dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="356dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/negro"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/etx_ingresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txvw_sincuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/noto_serif_toto_medium"
+        android:text="TextView"
+        android:textColor="@color/blanco"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="657dp"
+        tools:text="@string/sincuenta" />
+
+    <TextView
+        android:id="@+id/txv_regis_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/noto_serif_toto_medium"
+        android:text="@string/registro"
+        android:textColor="@color/naranja"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="244dp"
+        tools:layout_editor_absoluteY="657dp" />
+
+    <Button
+        android:id="@+id/btn_ingresar"
+        android:layout_width="268dp"
+        android:layout_height="49dp"
+        android:backgroundTint="@color/blanco"
+        android:ems="10"
+        android:fontFamily="@font/noto_serif_toto_medium"
+        android:text="@string/entra"
+        android:textAlignment="center"
+        android:textColor="@color/negro"
+        android:textSize="24sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/naranja"
+        app:strokeWidth="3dp"
+        tools:layout_editor_absoluteY="440dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

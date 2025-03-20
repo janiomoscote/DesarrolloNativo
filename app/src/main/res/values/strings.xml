@@ -1,0 +1,33 @@
+<resources>
+    <string name="imvw_logo_splash">Logo de la aplicación</string>
+    <string name="app_name">Orientación</string>
+    <string name="minombre">Janio R. Moscote P.</string>
+    <string name="registro">Regístrate</string>
+    <string name="inregistro">Registrar</string>
+    <string name="impulso">Inicia una nueva aventura con Orientación y descubre una nueva manera de ver el mundo</string>
+    <string name="inicia">Comienza</string>
+    <string name="entra">Ingresar</string>
+    <string name="recupera">Recupera Tu Contraseña</string>
+    <string name="claustri">Contraseña</string>
+    <string name="ditto">Repetir Contraseña</string>
+    <string name="sincuenta">¿No tienes cuenta?</string>
+    <string name="with_google">Ingresa con Google</string>
+    <string name="abordo">La aventura está por comenzar, por favor inicia sesión</string>
+    <string name="message">Bienvenido, iniciemos el registro</string>
+    <string name="recuperacion">Para recuperación de contraseña, por favor suministra el correo del usuario registrado</string>
+    <string name="correo_electronico">Ingresa tu correo</string>
+    <string name="enviar">Enviar</string>
+    <string name="nombre">Ejemplo Nombre</string>
+    <string name="nomen">Nombres</string>
+    <string name="apellidos">Ejemplo Apellidos</string>
+    <string name="gen">Apellidos</string>
+    <string name="correo">Ejemplo Correo</string>
+    <string name="epistula">Correo</string>
+    <string name="usuario">Ejemplo Usuario</string>
+    <string name="telefono">Ejemplo Teléfono</string>
+    <string name="telephoni">Teléfono</string>
+    <string name="editar">Editar Perfil</string>
+    <string name="perfil_usuario">Perfil del Usuario</string>
+    <string name="terminos">Aceptar Términos y Condiciones</string>
+
+</resources>

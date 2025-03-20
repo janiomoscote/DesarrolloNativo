@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/negro">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="366dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/imvw_logo_reg"
+            android:layout_width="185dp"
+            android:layout_height="130dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/txv_nom_app_regi"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:fontFamily="@font/noto_serif_toto_medium"
+            android:text="@string/app_name"
+            android:textColor="@color/blanco"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/txv_mens_reg"
+            android:layout_width="313dp"
+            android:layout_height="44dp"
+            android:paddingTop="15dp"
+            android:text="@string/message"
+            android:textAlignment="center"
+            android:textColor="@color/blanco"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txv_nombre_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/noto_serif_toto_medium"
+            android:text="@string/nomen"
+            android:textAlignment="center"
+            android:textColor="@color/gris"
+            android:textSize="16sp"
+            android:paddingTop="15dp"/>
+
+        <EditText
+            android:id="@+id/edtx_nombres"
+            style="@style/EditTextRounded"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/blanco"
+            android:textColorHint="@color/blanco"
+            android:paddingTop="25dp" />
+
+        <TextView
+            android:id="@+id/txv_apellidos"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:fontFamily="@font/noto_serif_toto_medium"
+            android:paddingTop="15dp"
+            android:text="@string/gen"
+            android:textAlignment="center"
+            android:textColor="@color/gris"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtx_apellidos"
+            style="@style/EditTextRounded"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/gris" />
+
+        <TextView
+            android:id="@+id/txv_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto_serif_toto_medium"
+            android:paddingTop="15dp"
+            android:text="@string/epistula"
+            android:textAlignment="center"
+            android:textColor="@color/blanco"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtx_correo"
+            style="@style/EditTextRounded"
+            android:layout_width="match_parent"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/gris"
+            android:layout_height="38dp" />
+
+        <TextView
+            android:id="@+id/txv_contrasenya"
+
+            android:layout_width="371dp"
+            android:layout_height="51dp"
+            android:fontFamily="@font/noto_serif_toto_medium"
+            android:paddingTop="15dp"
+            android:text="@string/claustri"
+            android:textAlignment="center"
+            android:textColor="@color/gris"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtx_contrasenya"
+            style="@style/EditTextRounded"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/gris" />
+
+        <TextView
+            android:id="@+id/txv_repet_contrasenya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto_serif_toto_medium"
+            android:text="@string/ditto"
+            android:textAlignment="center"
+            android:textColor="@color/gris"
+            android:textSize="16sp"
+            android:paddingTop="15dp"/>
+
+        <EditText
+            android:id="@+id/edtx_repet_contrasenya"
+            style="@style/EditTextRounded"
+            android:layout_width="373dp"
+            android:layout_height="38dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/gris" />
+
+        <CheckBox
+            android:id="@+id/ckbx_terminos"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="@string/terminos"
+            android:textColor="@color/blanco" />
+
+        <Button
+            android:id="@+id/btn_registrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blanco"
+            android:text="@string/inregistro"
+            android:textColor="@color/naranja"
+            android:textSize="30dp"
+            android:paddingTop="15dp"
+            app:strokeColor="@color/naranja"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/btn_ingresar_reg"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/blanco"
+            android:paddingTop="15dp"
+            android:text="@string/entra"
+            android:textColor="@color/naranja"
+            android:textSize="30sp"
+            app:strokeColor="@color/naranja"
+            app:strokeWidth="3dp" />
+
+    </LinearLayout>
+</ScrollView>

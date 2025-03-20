@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/emblema_one</item>
+        <item>@font/emilys_candy</item>
+        <item>@font/inika</item>
+        <item>@font/inria_serif_light</item>
+        <item>@font/instrument_serif</item>
+        <item>@font/lexend</item>
+        <item>@font/libre_caslon_text</item>
+        <item>@font/manuale_light</item>
+        <item>@font/marcellus</item>
+        <item>@font/noto_serif</item>
+        <item>@font/noto_serif_thin</item>
+        <item>@font/noto_serif_toto_medium</item>
+        <item>@font/texturina_thin</item>
+    </array>
+</resources>
