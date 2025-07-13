@@ -18,7 +18,7 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
+        setContentView(R.layout.activity_splash); //para que la actividad se muestre en la pantalla
 
         scheduler = Executors.newSingleThreadScheduledExecutor();
         scheduler.schedule(new MyRunnable(), 1, TimeUnit.SECONDS);

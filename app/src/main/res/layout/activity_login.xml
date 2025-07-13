@@ -75,49 +75,55 @@
         android:id="@+id/txv_abordo"
         android:layout_width="314dp"
         android:layout_height="60dp"
+        android:layout_marginTop="192dp"
         android:fontFamily="@font/noto_serif_toto_medium"
         android:text="@string/abordo"
         android:textAlignment="center"
         android:textColor="@color/blanco"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.371"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="191dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imvw_contrasenya"
         android:layout_width="55dp"
         android:layout_height="56dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toStartOf="@+id/etx_contrasenya"
+        app:layout_constraintHorizontal_bias="0.285"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/llave"
-        tools:layout_editor_absoluteY="356dp" />
+        app:layout_constraintTop_toBottomOf="@+id/imvw_perfil"
+        app:srcCompat="@drawable/llave" />
 
     <ImageView
         android:id="@+id/imvw_perfil"
         android:layout_width="55dp"
         android:layout_height="60dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="288dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/usuario"
-        tools:layout_editor_absoluteY="287dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/usuario" />
 
     <EditText
         android:id="@+id/etx_nombre_usuario"
         style="@style/EditTextRounded"
         android:layout_width="300dp"
         android:layout_height="43dp"
+        android:layout_marginTop="296dp"
         android:ems="10"
+        android:hint="@string/usuario"
         android:inputType="text"
         android:text=""
         android:textAlignment="center"
         android:textColor="@color/negro"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toEndOf="@+id/imvw_perfil"
-        tools:layout_editor_absoluteY="298dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etx_contrasenya"
@@ -133,7 +139,8 @@
         android:textAlignment="center"
         android:textColor="@color/negro"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/etx_ingresar"
+        android:hint="@string/claustri"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -141,42 +148,49 @@
         android:id="@+id/txvw_sincuenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
         android:fontFamily="@font/noto_serif_toto_medium"
         android:text="TextView"
         android:textColor="@color/blanco"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="657dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent"
         tools:text="@string/sincuenta" />
 
     <TextView
         android:id="@+id/txv_regis_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="44dp"
         android:fontFamily="@font/noto_serif_toto_medium"
         android:text="@string/registro"
         android:textColor="@color/naranja"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="244dp"
-        tools:layout_editor_absoluteY="657dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btn_ingresar"
         android:layout_width="268dp"
         android:layout_height="49dp"
+        android:layout_marginTop="444dp"
         android:backgroundTint="@color/blanco"
         android:ems="10"
         android:fontFamily="@font/noto_serif_toto_medium"
         android:text="@string/entra"
         android:textAlignment="center"
         android:textColor="@color/negro"
-        android:textSize="24sp"
 
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintHorizontal_bias="0.664"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:strokeColor="@color/naranja"
         app:strokeWidth="3dp"
-        tools:layout_editor_absoluteY="440dp" />
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

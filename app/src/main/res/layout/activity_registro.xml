@@ -14,6 +14,7 @@
         android:padding="20dp">
 
         <ImageView
+            android:contentDescription="@string/logo_de_la_aplicaci_n"
             android:id="@+id/imvw_logo_reg"
             android:layout_width="185dp"
             android:layout_height="130dp"
@@ -35,36 +36,35 @@
             android:paddingTop="15dp"
             android:text="@string/message"
             android:textAlignment="center"
-            android:textColor="@color/blanco"
+            android:textColor="@color/gris"
             android:textSize="20sp" />
 
         <TextView
             android:id="@+id/txv_nombre_reg"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="44dp"
             android:layout_marginTop="5dp"
             android:fontFamily="@font/noto_serif_toto_medium"
+            android:paddingTop="15dp"
             android:text="@string/nomen"
             android:textAlignment="center"
             android:textColor="@color/gris"
-            android:textSize="16sp"
-            android:paddingTop="15dp"/>
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/edtx_nombres"
             style="@style/EditTextRounded"
             android:layout_width="match_parent"
-            android:layout_height="38dp"
+            android:layout_height="53dp"
             android:ems="10"
+            android:hint="@string/nombres"
             android:inputType="text"
-            android:textColor="@color/blanco"
-            android:textColorHint="@color/blanco"
-            android:paddingTop="25dp" />
+            android:textColor="@color/negro" />
 
         <TextView
             android:id="@+id/txv_apellidos"
             android:layout_width="match_parent"
-            android:layout_height="37dp"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/noto_serif_toto_medium"
             android:paddingTop="15dp"
             android:text="@string/gen"
@@ -76,10 +76,12 @@
             android:id="@+id/edtx_apellidos"
             style="@style/EditTextRounded"
             android:layout_width="match_parent"
-            android:layout_height="38dp"
+            android:layout_height="48dp"
             android:ems="10"
+            android:hint="@string/gen"
             android:inputType="text"
-            android:textColor="@color/gris" />
+
+            android:textColor="@color/negro" />
 
         <TextView
             android:id="@+id/txv_correo"
@@ -89,23 +91,24 @@
             android:paddingTop="15dp"
             android:text="@string/epistula"
             android:textAlignment="center"
-            android:textColor="@color/blanco"
+            android:textColor="@color/gris"
             android:textSize="16sp" />
 
         <EditText
             android:id="@+id/edtx_correo"
             style="@style/EditTextRounded"
             android:layout_width="match_parent"
+            android:layout_height="48dp"
             android:ems="10"
             android:inputType="text"
-            android:textColor="@color/gris"
-            android:layout_height="38dp" />
+            android:textColor="@color/negro"
+            android:hint="@string/epistula"/>
 
         <TextView
             android:id="@+id/txv_contrasenya"
 
-            android:layout_width="371dp"
-            android:layout_height="51dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/noto_serif_toto_medium"
             android:paddingTop="15dp"
             android:text="@string/claustri"
@@ -117,47 +120,73 @@
             android:id="@+id/edtx_contrasenya"
             style="@style/EditTextRounded"
             android:layout_width="match_parent"
-            android:layout_height="38dp"
+            android:layout_height="48dp"
             android:ems="10"
+            android:hint="@string/claustri"
             android:inputType="text"
-            android:textColor="@color/gris" />
+            android:textColor="@color/negro"
+            />
 
         <TextView
             android:id="@+id/txv_repet_contrasenya"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/noto_serif_toto_medium"
+            android:paddingTop="15dp"
             android:text="@string/ditto"
             android:textAlignment="center"
             android:textColor="@color/gris"
-            android:textSize="16sp"
-            android:paddingTop="15dp"/>
+            android:textSize="16sp"/>
 
         <EditText
             android:id="@+id/edtx_repet_contrasenya"
             style="@style/EditTextRounded"
-            android:layout_width="373dp"
-            android:layout_height="38dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
             android:ems="10"
             android:inputType="text"
-            android:textColor="@color/gris" />
+            android:textColor="@color/negro"
+            android:hint="@string/ditto"/>
+
+        <TextView
+            android:id="@+id/txv_telefono"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto_serif_toto_medium"
+            android:paddingTop="15dp"
+            android:text="@string/telephoni"
+            android:textAlignment="center"
+            android:textColor="@color/gris"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/edtx_telefono"
+            style="@style/EditTextRounded"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="@string/telephoni"
+            android:inputType="text"
+            android:textColor="@color/negro" />
 
         <CheckBox
             android:id="@+id/ckbx_terminos"
             android:layout_width="match_parent"
             android:layout_height="42dp"
             android:text="@string/terminos"
-            android:textColor="@color/blanco" />
+            android:textColor="@color/gris" />
 
         <Button
             android:id="@+id/btn_registrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/blanco"
+            android:paddingTop="15dp"
             android:text="@string/inregistro"
             android:textColor="@color/naranja"
-            android:textSize="30dp"
-            android:paddingTop="15dp"
+            android:textSize="30sp"
             app:strokeColor="@color/naranja"
             app:strokeWidth="3dp" />
 

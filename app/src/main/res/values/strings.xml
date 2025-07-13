@@ -23,11 +23,15 @@
     <string name="gen">Apellidos</string>
     <string name="correo">Ejemplo Correo</string>
     <string name="epistula">Correo</string>
-    <string name="usuario">Ejemplo Usuario</string>
+    <string name="ejeusuario">Ejemplo Usuario</string>
     <string name="telefono">Ejemplo Teléfono</string>
     <string name="telephoni">Teléfono</string>
     <string name="editar">Editar Perfil</string>
     <string name="perfil_usuario">Perfil del Usuario</string>
     <string name="terminos">Aceptar Términos y Condiciones</string>
+    <string name="logo_de_la_aplicaci_n">Logo de la aplicación</string>
+    <string name="nombres">Nombres</string>
+    <string name="usuario">usuario</string>
+
 
 </resources>

@@ -28,7 +28,7 @@
             android:exported="false" />
 
         <activity android:name=".HomeActivity"
-            android:exported="false"/> <!--Por cada archivo Java y su activity debe existir una declaración dentro de este archivo-->
+            android:exported="false"/> <!--Por cada archivo Java y su activity debe existir una declaración dentro de este archivo AndroidManifest.xml-->
 
         <activity android:name=".RegistroActivity"
             android:exported="false"/>
@@ -38,8 +38,6 @@
 
         <activity android:name=".RecuperacionActivity"
             android:exported="false"/>
-
-
 
         <meta-data
             android:name="preloaded_fonts"

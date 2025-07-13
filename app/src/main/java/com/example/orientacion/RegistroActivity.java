@@ -1,6 +1,5 @@
 package com.example.orientacion;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -11,17 +10,15 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class RegistroActivity extends AppCompatActivity {
 
-    EditText names, surnames, email, contrasenya, confirm_contras;
+    EditText names, surnames, email, contrasenya, confirm_contras, telefono;
     String namesStr, surnamesStr,emailStr, contrasenyaStr, confirm_contrasStr;
     CheckBox ckbx_terminos;
 
-    Button btn_registrar, btn_ingresar_reg;
+    Button btn_register, btn_ingresar_reg;
 
 
     SharedPreferences shrprf;
@@ -36,20 +33,24 @@ public class RegistroActivity extends AppCompatActivity {
         email=findViewById(R.id.edtx_correo);
         contrasenya=findViewById(R.id.edtx_contrasenya);
         confirm_contras=findViewById(R.id.edtx_repet_contrasenya);
-        btn_registrar=findViewById(R.id.btn_registrar);
+        telefono=findViewById(R.id.edtx_telefono);
+        ckbx_terminos=findViewById(R.id.ckbx_terminos);
+        btn_register =findViewById(R.id.btn_registrar);
+
 
         shrprf = getSharedPreferences("DataSP",Context.MODE_PRIVATE);
 
 
-        btn_registrar.setOnClickListener(new View.OnClickListener() {
+        btn_register.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
 
                 if( validarCampos()){
-                    //Guardar los datos
+                    //Guardar los datos  luego de validar los datos
                     guardarDatos();
+                    //Redireccionar al usuario al login
                     Intent intent = new Intent(RegistroActivity.this, LoginActivity.class);
                     startActivity(intent);
                     finish();
