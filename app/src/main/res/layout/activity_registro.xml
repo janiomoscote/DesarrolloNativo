@@ -8,11 +8,12 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="366dp"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="20dp">
 
+        <!-- Se empiezan a agregar los componentes deseados-->
         <ImageView
             android:contentDescription="@string/logo_de_la_aplicaci_n"
             android:id="@+id/imvw_logo_reg"
